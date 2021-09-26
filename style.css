@@ -1,0 +1,315 @@
+/*This is the css for header section*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    
+    width: 100%;
+    background-color: rgb(49, 33, 49);
+    height: 80px;
+    display: flex;
+    
+}
+#leftnav{
+     width: 50%;
+}
+#rightnav{
+    width: 30%;
+    line-height: 80px;
+    
+    text-align: center;
+}
+#logo{
+    
+    line-height: 80px;
+    
+    width: 20%;
+    text-align: center;
+    
+}
+#logoImage{
+    border-radius: 50%;
+    border-color: violet;
+}
+    
+    
+    
+
+div ul{
+    
+    display: flex;
+    width: 60%;
+    line-height: 80px;
+    
+    justify-content:center ;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+}
+a:hover{
+    color: teal;
+}
+#inputbox{
+    border-color: rgb(53, 50, 53);
+    border-radius: 15px;
+    font-size:20px ;
+    
+}
+#search_button{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 6px;
+    
+    
+    
+}
+#search_button:hover{
+    color: cadetblue;
+}
+
+/*This is the css for main section*/
+
+
+#firstSection{
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/7578746/pexels-photo-7578746.jpeg?cs=srgb&dl=pexels-john-diez-7578746.jpg&fm=jpg://images.pexels.com/photos/3989751/pexels-photo-3989751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;
+    height: 100vh;
+}
+main div p{
+    color :black;
+}
+#mainFirst{
+    float: left;
+    height: 100vh;
+    
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+}
+#mainSecond{
+    float: right;
+    height: 100vh;
+    
+    
+    justify-content: center;
+    width: 30%;
+}
+#mainLeftcontent{
+    margin-top: 200px;
+}
+#mainRightcontent{
+    margin-top: 200px;
+}
+
+main section div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+main section div div button {
+    font-size: 20px;
+    color: cadetblue;
+}
+#mainContentImage{
+    border-radius: 50%;
+}
+#textbig{
+    font-size: 50px;
+}
+main section div div button{
+    margin-top: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    border-width: 2px;
+    padding: 10px;
+    
+    
+}
+main section div div button:hover{
+    background-color: rgb(19, 19, 20);
+    
+}
+#sec1{
+    display: flex;
+    
+    
+    padding: 25px;
+    
+    
+    
+}
+#sec2{
+    display: flex;
+    flex-direction: row-reverse;
+   
+    padding: 25px;
+    
+
+}
+#sec3{
+    display: flex;
+    
+    
+    padding: 25px;
+}
+section div p,h3{
+    margin-top:15px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    
+}
+section div img{
+    border-radius: 20%;
+    margin: 15px;
+    
+}
+footer{
+    height: 80px;
+    background-color: rgb(49, 33, 49);
+}
+#contactus{
+    background-color: rgb(163, 172, 172);
+    height: 40vh;
+    text-align: center;
+    
+}
+section h3{
+    font-size: 25px;
+}
+section input{
+    margin-top: 10px;
+    width: 500px;
+    height: 25px;
+    border-radius: 5px;
+    border: rgb(146, 30, 78);
+    font-size: 12px;
+    padding-left: 6px;
+    
+    
+}
+section form button {
+    font-size: 20px;
+    margin-top: 6px;
+    border-radius: 5px;
+    background: transparent;
+    border-color: black;
+    color: white;
+    padding:6px
+}
+section form button:hover{
+    background-color: rgb(133, 128, 128);
+    cursor: pointer;
+}
+section form textarea{
+    border-radius: 5px;
+    margin-top: 6px;
+    padding-left: 6px;
+}
+footer p{
+    text-align: center;
+    padding-top: 8px;
+    color: white;
+}
+
+@media only screen and (max-width:1216px)
+{
+    nav{
+        flex-direction: column;
+        height: 500px;
+        
+    }
+    div ul{
+        flex-direction: column;
+        
+    }
+    #mainFirst{
+        height: 300vh;
+    }
+
+}
+
+/*video css*/
+.video-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.video-container .close{
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    font-size: 20px;
+    transform: scale(0);
+    cursor: pointer;
+}
+.video-container video{
+    width: 90%;
+    max-width: 800px;
+    transition: all 0.3s;
+    transform: scale(0);
+    outline: none;
+    box-shadow: o 20px 20px rgba(0, 0, 0, 0.2);
+}
+.video-container.show{
+    pointer-events: all;
+    opacity: 1;
+    
+}
+.video-container.show video{
+    transform: scale(1);
+}
+.video-container.show .close{
+    transform: scale(1);
+}
+
+/* css for subscribe window*/
+
+#subscribe{
+    color: cadetblue;
+    padding: 6px;
+}
+
+footer section h2 {
+    display: inline-block;
+    
+   
+ }
+ #icons{
+     text-align: center;
+     padding-top: 8px;
+ }
+
+
+
